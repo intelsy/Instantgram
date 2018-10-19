@@ -6,8 +6,7 @@ class HelloWorld extends React.Component {
         // Greeting: {this.props.greeting}
         <div>
         <h1>instantgram</h1>
-        <p>Otintitns</p>
-        aoaoaoa
+        <p>Created by Tsurusaki and Yamazaki</p>
         </div>
     );
   }
