@@ -5,9 +5,12 @@ class HelloWorld extends React.Component {
     return (
         // Greeting: {this.props.greeting}
         <div>
-        <h1>instantgram</h1>
-        <p>Otintitns</p>
-        aoaoaoa
+        <header>
+          <h1>instantgram</h1>
+        </header>
+        <main>
+        <p>Using Ruby, Rails, React</p>
+        </main>
         </div>
     );
   }
