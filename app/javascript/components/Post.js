@@ -1,4 +1,12 @@
 import React from "react"
+import request from 'superagent'
+
+const Root = window.location.origin || `${window.location.protocol}//${window.location.hostname}`
+
+const APIRoot = `${Root}/api`
+const APIEndpoints = {
+  MESSAGES: APIRoot + '/images',
+}
 
 class Post extends React.Component {
 
@@ -9,7 +17,7 @@ class Post extends React.Component {
   saveImageChat(file) {
     return new Promise((resolve, reject) => {
       request
-      .post(`${APIEndpoints.MESSAGES}/upload_image`)
+      .post(`${APIEndpoints.MESSAGES}`)
     //   .set('X-CSRF-Token', CSRFToken())
       .attach('image', file, file.name)
     //   .field('to_user_id', to_user_id)
@@ -38,7 +46,7 @@ class Post extends React.Component {
           type='file'
           ref='image'
           className='chosenFile'
-          onChange={ this.setImage.bind(this) }
+          onChange={ this.postImage.bind(this) }
         />
         <span 
           className='post-box__tip'
