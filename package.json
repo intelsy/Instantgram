@@ -8,8 +8,6 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "react-file-input": "^0.2.5",
-    "react_ujs": "^2.4.4"
   },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
