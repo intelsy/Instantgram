@@ -12,6 +12,7 @@ gem 'webpacker'
 gem 'react-rails'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'devise'
 
 group :production do
   gem 'pg'
@@ -28,6 +29,3 @@ group :development do
   gem 'sqlite3'
 end
 
-group :production do
-  gem 'pg'
-end
