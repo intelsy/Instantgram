@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/shotayamazaki/.nodebrew/node/v10.0.0/bin/node /Users/shotayamazaki/.nodebrew/current/bin/yarn install
+  /Users/shotayamazaki/.nodebrew/node/v10.0.0/bin/node /Users/shotayamazaki/.nodebrew/current/bin/yarn add react-file-input
 
 PATH: 
   /Users/shotayamazaki/.nodebrew/current/bin:/Users/shotayamazaki/.pyenv/shims:/Users/shotayamazaki/.pyenv/bin:/Users/shotayamazaki/.rbenv/shims:/Users/shotayamazaki/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,11 +14,11 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/shotayamazaki/Desktop/instantgram/node_modules/.bin/acorn'
+  Error: EACCES: permission denied, unlink '/Users/shotayamazaki/Desktop/instantgram/node_modules/.bin/ansi-html'
 
 npm manifest: 
   {
-    "scripts":{
+    "scripts": {
       "start": "bin/webpack-dev-server & rails s"
     },
     "dependencies": {
