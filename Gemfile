@@ -13,6 +13,8 @@ gem 'react-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'devise'
+gem 'hirb'
+gem 'hirb-unicode'
 
 group :production do
   gem 'pg'
