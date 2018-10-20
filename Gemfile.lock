@@ -74,6 +74,10 @@ GEM
     ffi (1.9.25)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    hirb (0.7.3)
+    hirb-unicode (0.0.5)
+      hirb (~> 0.5)
+      unicode-display_width (~> 0.1.1)
     i18n (1.1.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -177,6 +181,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (4.1.19)
       execjs (>= 0.3.0, < 3)
+    unicode-display_width (0.1.1)
     warden (1.2.7)
       rack (>= 1.0)
     web-console (2.3.0)
@@ -200,6 +205,8 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.1.0)
   devise
+  hirb
+  hirb-unicode
   jbuilder (~> 2.0)
   jquery-rails
   mini_magick
@@ -216,4 +223,4 @@ DEPENDENCIES
   webpacker
 
 BUNDLED WITH
-   1.16.4
+   1.16.6
