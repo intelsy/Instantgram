@@ -10,6 +10,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '>= 0.4.0', group: :doc
 gem 'webpacker'
 gem 'react-rails'
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :production do
   gem 'pg'
