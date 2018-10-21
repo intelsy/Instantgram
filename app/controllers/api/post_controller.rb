@@ -3,7 +3,7 @@ class Api::PostController < ApplicationController
 
     def create
         # current_user = current_user.id
-        new_post = Post.create(post_user_id: 1, message: 'hoge', image_path: params[:image])
+        new_post = Post.create(post_user_id: 1, message: params[:message], image_path: params[:image])
 
         render json: new_post
     end
