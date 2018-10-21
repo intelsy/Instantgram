@@ -15,9 +15,9 @@ gem 'mini_magick'
 gem 'devise'
 gem 'hirb'
 gem 'hirb-unicode'
-gem 'pg'
 
 group :production do
+  gem 'pg'
 end
 
 group :development, :test do
@@ -27,4 +27,5 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'sqlite3'
 end
