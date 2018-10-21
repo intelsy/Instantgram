@@ -8,19 +8,18 @@ const APIEndpoints = {
   MESSAGES: APIRoot + '/images',
 }
 
+function CSRFToken() {
+  return document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+}
+
 class Post extends React.Component {
 
-  setImage(e) {
-    this.state = e.target
-  }
-
-  saveImageChat(file) {
+  saveImage(file) {
     return new Promise((resolve, reject) => {
       request
       .post(`${APIEndpoints.MESSAGES}`)
-    //   .set('X-CSRF-Token', CSRFToken())
       .attach('image', file, file.name)
-    //   .field('to_user_id', to_user_id)
+      .set('X-CSRF-Token', CSRFToken())
       .end((error, res) => {
         if (!error && res.status === 200) {
           let json = JSON.parse(res.text)
@@ -36,7 +35,7 @@ class Post extends React.Component {
     const inputDOM = e.target
     if (!inputDOM.files.length) return
     const file = inputDOM.files[0]
-    this.saveImageChat(file)
+    this.saveImage(file)
   }
 
   render() {
@@ -48,12 +47,6 @@ class Post extends React.Component {
           className='chosenFile'
           onChange={ this.postImage.bind(this) }
         />
-        <span 
-          className='post-box__tip'
-          onClick={ this.postImage.bind(this) }
-        >
-        post
-        </span>
       </div>
     );
   }
